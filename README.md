@@ -30,9 +30,18 @@ python -m venv venv
 pip install -r requirements.txt
   ```
 
-4. Create a .env file and add the OpenAI API key
+4. Configure environment variables
+
+  Copy the example file and add your OpenAI API key:
+
   ```
-OPENAI_API_KEY=your_api_key_here
+  cp .env.example .env
+  ```
+
+  Edit `.env` and set your key:
+
+  ```
+  OPENAI_API_KEY=your_openai_api_key_here
   ```
 
 5. Load a YouTube video transcript using the YouTube transcript loader
